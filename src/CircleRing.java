@@ -7,7 +7,20 @@ import org.jointheleague.graphical.robot.Robot;
 
 public class CircleRing {
     public static void main(String[] args) throws Exception {
-
+Robot rob = new Robot();
+rob.moveTo(150, 200);
+rob.penDown();
+rob.setSpeed(100);
+for (int i = 1; i < 361; i++) {
+	rob.move(3);
+	rob.turn(1);
+	if(i % 20 == 0) {
+		for (int j = 1; j <361; j++) {
+			rob.move(1);
+			rob.turn(1);
+		}
+	}
+}
         // 1. Make a new Robot
 
 
