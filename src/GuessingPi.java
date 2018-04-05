@@ -6,6 +6,19 @@
 import javax.swing.JOptionPane;
 
 public class GuessingPi {
+	public static void main(String[] args) {
+		String pi = "3.1415926";
+		System.out.println(pi.substring(0, 4));
+	for (int i = 1; i < 5 ; i++) {
+		String a = JOptionPane.showInputDialog("what is the next diget of pi");
+		if(a.equals("3.1415926")) {
+			JOptionPane.showMessageDialog(null, "correct");
+		}
+	}
+
+		
+		
+	
 	// 1. Make a main method and make sure your program can run
 
 		// 2. Make a String variable to hold the value of Pi.
@@ -32,7 +45,7 @@ public class GuessingPi {
 
 					// 8. If they are not, print out "incorrect" and tell them
 					//    to start over. Use 'break;' to break out of the loop.
-
+	}
 }
 
 
