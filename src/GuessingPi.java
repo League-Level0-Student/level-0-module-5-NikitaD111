@@ -9,10 +9,14 @@ public class GuessingPi {
 	public static void main(String[] args) {
 		String pi = "3.1415926";
 		System.out.println(pi.substring(0, 4));
-	for (int i = 1; i < 5 ; i++) {
+	for (int i = 0; i < 9 ; i++) {
 		String a = JOptionPane.showInputDialog("what is the next diget of pi");
-		if(a.equals("3.1415926")) {
+		if(a.charAt(0) == (pi.charAt(i))) {
 			JOptionPane.showMessageDialog(null, "correct");
+		}
+		else{
+			JOptionPane.showMessageDialog(null, "wrong");
+			break;
 		}
 	}
 
